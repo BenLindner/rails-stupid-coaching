@@ -1,0 +1,13 @@
+<!-- <h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+ -->
+<% answer = params[:question_input]%>
+
+<p><%= answer %></p>
+<!-- If the message is I am going to work, the coach will answer Great!
+If the message has a question mark ? at the end, the coach will answer Silly question, get dressed and go to work!.
+Otherwise he will answer I don't care, get dressed and go to work!
+ -->
+<p><%= coach_answer(answer) %></p>
+
+<%= link_to "W'Sup fucker?", "/ask" %>
